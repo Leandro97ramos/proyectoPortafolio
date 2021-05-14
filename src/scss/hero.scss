@@ -1,0 +1,153 @@
+*,*:after, *:before {
+  box-sizing: inherit;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  box-sizing: border-box;
+  font-family:  'Lato', bold;
+
+
+}
+.contenedor {
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.imagen-Principal{
+  max-width: 100%;
+}
+
+.hero{
+    background-image: url(../../../assets/foto-inicio.jpg) ;
+    height: 94vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero:before {
+	content:'';
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.6);
+}
+
+header{
+  padding-top:  210px;
+  display: flex;
+  position: relative;
+  flex-direction:column;
+  justify-content: center;
+}
+
+.barra{
+  margin:0;
+  padding:0;
+  position: absolute;
+  /* background-color: black; */
+  width: 100%;
+  top: 1rem;
+  /* padding: 1rem 0; */
+}
+
+.barra .contenedor{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width:768px){
+  .barra .contenedor{
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.navegacion ul li{
+  width: 60px;
+  padding: 10px 12px 10px 12px;
+  cursor: pointer;
+  list-style: none;
+  &:hover{
+
+    padding: 0px 15px;
+    margin: 25px;
+    text-align: center;
+    a{
+    color: #DB0000;
+    transition:  3s ease all;
+
+    }
+    transition:  1s ease all;
+  }
+}
+.navegacion ul li a{
+  color: white;
+  text-decoration: none;
+
+}
+.header-contenido h1{
+  color: white;
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header-contenido h2{
+  color: #e5be01;
+  padding-top: 25px;
+  position: relative;
+  bottom: 15%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.navegacion ul li a{
+  color: white;
+  text-decoration: none;
+}
+.navegacion ul{
+  padding-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px){
+  .navegacion{
+    flex:0 1 calc(43% - 1rem);
+  }
+  .navegacion ul{
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+  }
+
+}
+
+.header-contenido{
+  position: relative;
+  bottom: 22%;
+  display: flex;
+}
+
+.header-contenido .contenedor{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.contenido{
+  color: white;
+  margin-bottom:  1rem;
+  text-transform: uppercase;
+}
+
+.nombre-principal{
+  color: white;
+}
+
+.contenido-principal{
+  /* padding-left: 150px; */
+}

@@ -1,0 +1,45 @@
+
+@mixin formatoSkills($opcA , $opcB , $opcC , $opcD , $opcE ,$opcF, $opcG){
+  &,
+  &:before,
+  &:after{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+
+  }
+  margin: auto;
+  background:  linear-gradient($opcA , $opcB  $opcC, rgba(black, .2) $opcD);
+  position: relative;
+  transform: rotate(120deg);
+
+&:before{
+  content: $opcE ;
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #323330 content-box;
+  padding: .5em;
+  box-sizing:border-box;
+  font-size: 2rem ;
+  color: $opcF;
+  text-align: center;
+  line-height: 8rem;
+  transform: rotate(-120deg);
+}
+&:after{
+    content: $opcG ;
+    position: absolute;
+    font-size: 30px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(transparent 50%, #f6f6f6 50%);
+    transform: scale(1.1) rotate(-120deg) ;
+    text-align: center;
+    color: black;
+    line-height: 14rem;
+}
+
+}

@@ -1,0 +1,130 @@
+<div class="container" >
+
+
+<div class="contenedor-proyectos">
+  <div class="contenedor-titulo">
+
+      <h1>Proyectos</h1>
+      <div class="see-more">
+        <a type="button" name="button" [routerLink]="['/projects']" >+ DETALLES</a>
+
+      </div>
+  </div>
+  <div class="contenido-principal">
+
+
+    <div class="contenedor-carousel" >
+      <button type="button" name="button" id="flecha-izquierda" class="flecha-izquierda" (click)="izqScroll()"><img src="../assets/flecha-izquierda.png" alt=""></button>
+        <div class="carousel" >
+            <div class="proyecto" >
+              <a href="#" [routerLink]="['/Buscaminas']"><img src="../assets/projects/buscaMinas/fondo.jpg" alt=""></a>
+            </div>
+            <div class="proyecto" >
+              <a href="#" [routerLink]="['/clima']"><img src="../assets/clima-icon.png" alt="" width="150px" height="170px"></a>
+
+            </div>
+            <div class="proyecto" >
+              <a href="#" [routerLink]="['/listas']"><img src="../assets/lista-crud.png" alt=""></a>
+
+            </div>
+            <div class="proyecto" >
+              <a href="#" [routerLink]="['/BlogPlantas']" ><img src="../assets/cactus.jpg" alt=""></a>
+
+            </div>
+            <div class="proyecto" >
+              <a href="#"><img src="../assets/image.png" alt=""></a>
+
+            </div>
+
+        </div>
+        <button type="button" name="button" id="flecha-derecha" class="flecha-derecha" (click)="derScroll()"><img src="../assets/derecho.png" alt=""></button>
+    </div>
+  </div>
+
+
+
+  </div>
+  <!-- Skills -->
+  <div class="contenedor-skills">
+    <div class="titulo-skills">
+      <h1>Skills</h1>
+    </div>
+
+    <div class="contenedor-skill">
+        <div class="skill-html" >
+
+        </div>
+        <div class="skill-css3" >
+
+        </div>
+        <div class="skill-js" >
+
+        </div>
+        <div class="skill-mongo" >
+
+        </div>
+        <div class="skill-angular" >
+
+        </div>
+        <div class="skill-gulp-sass" >
+
+        </div>
+        <div class="skill-API-REST" >
+
+        </div>
+        <div class="skill-CSS-Grid" >
+
+        </div>
+        <div class="skill-Flexbox" >
+
+        </div>
+        <div class="skill-TypeScript" >
+
+        </div>
+        <div class="skill-NodeJs " >
+
+        </div>
+        <div class="skill-Express" >
+
+        </div>
+        <div class="skill-jQuery" >
+
+        </div>
+        <div class="skill-c">
+
+        </div>
+        <div class="skill-asp-net">
+
+        </div>
+        <div class="skill-sql">
+
+        </div>
+    </div>
+  </div>
+
+<div class="contenedor nose" [@aniBoton]="state">
+
+  <a type="button" class="ver-mas" ><span  (click)="togleBoton()" >Ver Mas+</span></a>
+    <div class="contenedor-quienSoy">
+
+      <div class="quienSoy-hero">
+          <img src="../assets/yo.png" alt="">
+          <a href="#" [routerLink]="['/contact']">¿Quién Soy?</a>
+      </div>
+
+    </div>
+
+
+</div>
+
+    <footer>
+
+      <div class="contacto">
+        <span>Contactame</span>
+      </div>
+      <div class="">
+        <span>leandro.97.ramos@gmail.com</span>
+      </div>
+    </footer>
+
+</div>

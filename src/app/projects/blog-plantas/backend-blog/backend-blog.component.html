@@ -1,0 +1,198 @@
+    <!-- <h1>{{title}}</h1>
+    <div class="message succes" *ngIf="status == 'sucess'">
+      <p class="letras">
+        El proyecto se ha creado correctamente, verlo aqui <a [routerLink]="['/proyecto', this.save_project._id]">verlo aqui</a>
+      </p>
+    </div>
+
+    <div class="message failed" *ngIf="status == 'failed'">
+      El proyecto no se ha podido crear
+
+    </div> -->
+    <section id="global">
+      <header>
+        <div class="clearfix">
+
+        </div>
+    <nav id="menu" >
+      <ul>
+        <li><a (click)="elegirOpc(1)">Cactus</a></li>
+        <li><a (click)="elegirOpc(2)">Curiosidades</a></li>
+        <li><a (click)="elegirOpc(3)">Resistentes al frio</a></li>
+        <li><a (click)="elegirOpc(4)">Interior</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+    <form #cactusForm="ngForm" *ngIf="opc == 1" (ngSubmit)="onSubmit(cactusForm)">
+        <div class="habili-cactus">
+
+
+          <p>
+            <label  for="title">title</label> <br>
+              <input  type="text" name="title" #title="ngModel" [(ngModel)]="cactus.title" required>
+              <!-- <span *ngIf=" title.touched && !title.valid"><img src="../../assets/novalid.png" alt=""> </span> -->
+              <!-- <span *ngIf=" title.touched && title.valid"><img src="../../assets/valid.png" alt=""> </span> -->
+
+          </p>
+          <p>
+            <label  class="tarea" for="year">year</label> <br>
+              <input type="text" name="year" #year="ngModel" [(ngModel)]="cactus.year" required> 
+
+              <!-- <span *ngIf=" year.touched && !year.valid"><img src="../../assets/novalid.png" alt=""></span> -->
+              <!-- <span *ngIf=" year.touched && year.valid"><img src="../../assets/valid.png" alt=""></span> -->
+          </p>
+          <p>
+            <label   for="description">description</label> <br>
+              <textarea type="text" name="description" #description="ngModel" [(ngModel)]="cactus.description" required ></textarea>
+
+              <!-- <span *ngIf=" description.touched && !description.valid"><img src="../../assets/novalid.png" alt=""></span> -->
+              <!-- <span *ngIf=" description.touched && description.valid"><img src="../../assets/valid.png" alt=""></span> -->
+          </p>
+
+
+          <p>
+            <label for="image">Imagen </label>
+              <span class="image" *ngIf="cactus.image" style="float:none;">
+                <img src="{{url+'get-image/'+cactus.image}}" style="width:100px;"/>
+              </span><br/>
+            <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" >
+          </p>
+          <p>
+            <input type="submit" class="botonEnviar"  value="Enviar" [disabled]="!cactusForm.form.valid" >
+          </p>
+      </div>
+
+
+    </form>
+
+    <form #curiosidadesForm="ngForm" *ngIf=" opc == 2" (ngSubmit)="onSubmit(curiosidadesForm)">
+        <div class="habili-curiosidades">
+
+
+          <p>
+              <input  type="text" name="title" #title="ngModel" [(ngModel)]="curiosidades.title" required>
+              <label  for="title">title</label> <br>
+              <span *ngIf=" title.touched && !title.valid"><img src="../../assets/novalid.png" alt=""> </span>
+              <span *ngIf=" title.touched && title.valid"><img src="../../assets/valid.png" alt=""> </span>
+
+          </p>
+          <p>
+              <textarea type="text" name="year" #year="ngModel" [(ngModel)]="curiosidades.year" required> </textarea>
+
+              <label  class="tarea" for="year">year</label> <br>
+              <span *ngIf=" year.touched && !year.valid"><img src="../../assets/novalid.png" alt=""></span>
+              <span *ngIf=" year.touched && year.valid"><img src="../../assets/valid.png" alt=""></span>
+          </p>
+          <p>
+              <input type="text" name="description" #description="ngModel" [(ngModel)]="curiosidades.description" required >
+
+              <label   for="description">description</label> <br>
+              <span *ngIf=" description.touched && !description.valid"><img src="../../assets/novalid.png" alt=""></span>
+              <span *ngIf=" description.touched && description.valid"><img src="../../assets/valid.png" alt=""></span>
+          </p>
+
+
+          <p>
+            <label for="image">Imagen </label>
+              <span class="image" *ngIf="curiosidades.image" style="float:none;">
+                <img src="{{url+'get-image/'+cactus.image}}" style="width:100px;"/>
+              </span><br/>
+            <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" />
+          </p>
+          <p>
+            <input type="submit" class="botonEnviar"  value="Enviar" [disabled]="!curiosidadesForm.form.valid" >
+          </p>
+      </div>
+
+
+    </form>
+
+    <form #plantasInteriorForm="ngForm" *ngIf=" opc == 3" (ngSubmit)="onSubmit(plantasInteriorForm)">
+        <div class="habili-plantasInterior">
+
+
+          <p>
+              <input  type="text" name="title" #title="ngModel" [(ngModel)]="plantasInterior.title" required>
+              <label  for="title">title</label> <br>
+              <span *ngIf=" title.touched && !title.valid"><img src="../../assets/novalid.png" alt=""> </span>
+              <span *ngIf=" title.touched && title.valid"><img src="../../assets/valid.png" alt=""> </span>
+
+          </p>
+          <p>
+              <textarea type="text" name="year" #year="ngModel" [(ngModel)]="plantasInterior.year" required> </textarea>
+
+              <label  class="tarea" for="year">year</label> <br>
+              <span *ngIf=" year.touched && !year.valid"><img src="../../assets/novalid.png" alt=""></span>
+              <span *ngIf=" year.touched && year.valid"><img src="../../assets/valid.png" alt=""></span>
+          </p>
+          <p>
+              <input type="text" name="description" #description="ngModel" [(ngModel)]="plantasInterior.description" required >
+
+              <label   for="description">description</label> <br>
+              <span *ngIf=" description.touched && !description.valid"><img src="../../assets/novalid.png" alt=""></span>
+              <span *ngIf=" description.touched && description.valid"><img src="../../assets/valid.png" alt=""></span>
+          </p>
+
+
+          <p>
+            <label for="image">Imagen </label>
+              <span class="image" *ngIf="plantasInterior.image" style="float:none;">
+                <img src="{{url+'get-image/'+cactus.image}}" style="width:100px;"/>
+              </span><br/>
+            <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" />
+          </p>
+          <p>
+            <input type="submit" class="botonEnviar"  value="Enviar" [disabled]="!plantasInteriorForm.form.valid" >
+          </p>
+      </div>
+
+
+    </form>
+
+    <form #plantasResistentForm="ngForm" *ngIf=" opc == 4" (ngSubmit)="onSubmit(plantasResistentForm)">
+        <div class="habili-PlantasResistent">
+
+
+          <p>
+              <input  type="text" name="title" #title="ngModel" [(ngModel)]="plantasResistent.title" required>
+              <label  for="title">title</label> <br>
+              <span *ngIf=" title.touched && !title.valid"><img src="../../assets/novalid.png" alt=""> </span>
+              <span *ngIf=" title.touched && title.valid"><img src="../../assets/valid.png" alt=""> </span>
+
+          </p>
+          <p>
+              <textarea type="text" name="year" #year="ngModel" [(ngModel)]="plantasResistent.year" required> </textarea>
+
+              <label  class="tarea" for="year">year</label> <br>
+              <span *ngIf=" year.touched && !year.valid"><img src="../../assets/novalid.png" alt=""></span>
+              <span *ngIf=" year.touched && year.valid"><img src="../../assets/valid.png" alt=""></span>
+          </p>
+          <p>
+              <input type="text" name="description" #description="ngModel" [(ngModel)]="plantasResistent.description" required >
+
+              <label   for="description">description</label> <br>
+              <span *ngIf=" description.touched && !description.valid"><img src="../../assets/novalid.png" alt=""></span>
+              <span *ngIf=" description.touched && description.valid"><img src="../../assets/valid.png" alt=""></span>
+          </p>
+
+
+          <p>
+            <label for="image">Imagen </label>
+              <span class="image" *ngIf="plantasResistent.image" style="float:none;">
+                <img src="{{url+'get-image/'+plantasResistent.image}}" style="width:100px;"/>
+              </span><br/>
+            <input type="file" name="image" placeholder="Subir imagen" (change)="fileChangeEvent($event)" />
+          </p>
+          <p>
+            <input type="submit" class="botonEnviar"  value="Enviar" [disabled]="!plantasResistentForm.form.valid" >
+          </p>
+      </div>
+
+
+    </form>
+</section>
+
+    <ng-template appBlog ></ng-template>
+<!-- "-->

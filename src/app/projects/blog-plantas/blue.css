@@ -1,0 +1,21 @@
+body{
+  background: url('../../../assets/invierno.jpg');
+  background-attachment: fixed;
+}
+
+#logo{
+
+  background: #1f87c4;
+
+}
+
+#menu ul li:hover{
+  background: #1f87c4;
+}
+
+.button-more{
+
+  background: #1f87c4;
+
+
+}

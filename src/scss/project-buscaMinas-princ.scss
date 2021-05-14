@@ -1,0 +1,45 @@
+*{
+  background-image: url(../../../../assets/projects/buscaMinas/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+body{
+
+}
+h1{
+  height: 10vh;
+}
+#empezar{
+  background: blue;
+  height: 10vh;
+}
+button{
+      width: 40px;
+}
+.contenedor-principales{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+  .contenedorJuego{
+    max-width: 350px;
+    height: 344px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    background: blue;
+    padding: 0px;
+    margin:0px;
+}
+.casillero,.minas{
+  min-width: 35px;
+  /* max-height: 34.39px; */
+  min-height: 34.39px;
+
+  padding: 0;
+  margin: 0;
+}

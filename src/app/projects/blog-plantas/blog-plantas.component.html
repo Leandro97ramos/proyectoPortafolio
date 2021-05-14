@@ -1,0 +1,46 @@
+ <div id="selector-theme">
+  <div (click)="cambioTheme(1)" id="to-green"> </div>
+  <div (click)="cambioTheme(2)" id="to-red"> </div>
+  <div (click)="cambioTheme(3)" id="to-blue"> </div>
+</div>
+<section id="global">
+    <!--Cabecera-->
+    <header>
+
+        <div id="logo">
+            PROYECTO JS
+        </div>
+        <div class="clearfix">
+
+        </div>
+        <nav id="menu">
+          <ul>
+            <li><a href="index.html">Curiosidades</a></li>
+            <li><a href="reloj.html">Cactus</a></li>
+            <li><a href="about.html">Plantas de Interior</a></li>
+            <li><a href="contact.html">Plantas resistente al frio</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <section id="content">
+      <div id="contenedor-posts">
+          <ul>
+            <li *ngFor="let cactu of cactus">
+                {{cactu.cactus}}
+            </li>
+            <li *ngFor="let curiosidad of curiosidades ">
+                {{curiosidad.curiosidades}}
+            </li>
+            <li *ngFor="let plantInt of plantasInterior">
+                {{plantInt.plantasInterior}}
+            </li>
+            <li *ngFor="let plantRes  of plantasResistent">
+                {{plantRes.plantasResistent}}
+            </li>
+          </ul>
+      </div>
+
+
+    </section>
+  </section>

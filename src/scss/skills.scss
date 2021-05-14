@@ -1,0 +1,655 @@
+*,*:after, *:before {
+  box-sizing: inherit;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  box-sizing: border-box;
+  font-family:  'Lato', bold;
+
+
+}
+.contenedor-skills{
+    padding-top: 5.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-skill{
+  width: 100%;
+
+}
+
+@media screen and (min-width: 800px){
+  .contenedor-skill{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+}
+
+.titulo-skills h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 6rem;
+}
+
+
+
+  /* progreso skills */
+
+  .skill-js{
+      &,
+      &:before,
+      &:after{
+        width: 12rem;
+        height: 12rem;
+        border-radius: 50%;
+
+      }
+      margin: auto;
+      background: linear-gradient(0deg,  rgb(29, 195, 31) 60%, rgba(black, .2) 75%);
+      position: relative;
+      transform: rotate(120deg);
+
+    &:before{
+      content: "JS" ;
+
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #323330 content-box;
+      padding: .5em;
+      box-sizing:border-box;
+      font-size: 2rem ;
+      color: #F0DB4F;
+      text-align: center;
+      line-height: 8rem;
+      transform: rotate(-120deg);
+    }
+    &:after{
+        content: "Óptimo" ;
+        position: absolute;
+        font-size: 25px;
+        top: 0;
+        left: 0;
+        background: linear-gradient(transparent 50%, #f6f6f6 50%);
+        transform: scale(1.1) rotate(-120deg) ;
+        text-align: center;
+        color: black;
+        line-height: 14rem;
+    }
+
+  }
+
+
+    .skill-html{
+        &,
+        &:before,
+        &:after{
+          width: 12rem;
+          height: 12rem;
+          border-radius: 50%;
+
+        }
+        margin: auto;
+        background: linear-gradient(0deg,  rgb(29, 195, 31) 60%, rgba(black, .2) 80%);
+        position: relative;
+        transform: rotate(120deg);
+
+      &:before{
+        content: "HTML5" ;
+
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #323330  content-box;
+        padding: .5em;
+        box-sizing:border-box;
+        font-size: 2rem ;
+        color: #f06529;
+        text-align: center;
+        line-height: 8rem;
+        transform: rotate(-120deg);
+      }
+      &:after{
+          content: "Óptimo" ;
+          position: absolute;
+          font-size: 25px;
+          top: 0;
+          left: 0;
+          background: linear-gradient(transparent 50%, #f6f6f6 50%);
+          transform: scale(1.1) rotate(-120deg) ;
+          text-align: center;
+          color: black;
+          line-height: 14rem;
+      }
+
+    }
+
+
+
+
+      .skill-css3{
+          &,
+          &:before,
+          &:after{
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+
+          }
+          margin: auto;
+          background: linear-gradient(0deg,  rgb(29, 195, 31) 40%, rgba(black, .2) 60%);
+          position: relative;
+          transform: rotate(120deg);
+
+        &:before{
+          content: "CSS3" ;
+
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #323330  content-box;
+          padding: .5em;
+          box-sizing:border-box;
+          font-size: 2rem ;
+          color: #264de4;
+          text-align: center;
+          line-height: 8rem;
+          transform: rotate(-120deg);
+        }
+        &:after{
+            content: "Óptimo" ;
+            position: absolute;
+            font-size: 25px;
+            top: 0;
+            left: 0;
+            background: linear-gradient(transparent 50%, #f6f6f6 50%);
+            transform: scale(1.1) rotate(-120deg) ;
+            text-align: center;
+            color: black;
+            line-height: 14rem;
+        }
+
+      }
+
+
+
+          .skill-angular{
+              &,
+              &:before,
+              &:after{
+                width: 12rem;
+                height: 12rem;
+                border-radius: 50%;
+
+              }
+              margin: auto;
+              background: linear-gradient(0deg,  rgb(94, 195, 31) 20%, rgba(black, .2) 40%);
+              position: relative;
+              transform: rotate(120deg);
+
+            &:before{
+              content: "Angular" ;
+
+
+              position: absolute;
+              top: 0;
+              left: 0;
+              background: #323330 content-box;
+              padding: .5em;
+              box-sizing:border-box;
+              font-size: 2rem ;
+              color: #dd1b16;
+              text-align: center;
+              line-height: 8rem;
+              transform: rotate(-120deg);
+            }
+            &:after{
+                content: "Bueno" ;
+                position: absolute;
+                font-size: 25px;
+                top: 0;
+                left: 0;
+                background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                transform: scale(1.1) rotate(-120deg) ;
+                text-align: center;
+                color: black;
+                line-height: 14rem;
+            }
+
+          }
+
+
+
+            .skill-mongo{
+                &,
+                &:before,
+                &:after{
+                  width: 12rem;
+                  height: 12rem;
+                  border-radius: 50%;
+
+                }
+                margin: auto;
+                background: linear-gradient(0deg,  rgb(172, 174, 0) 10%, rgba(black, .2) 20%);
+                position: relative;
+                transform: rotate(120deg);
+
+              &:before{
+                content: "Mongo" ;
+
+
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: #323330 content-box;
+                padding: .5em;
+                box-sizing:border-box;
+                font-size: 2rem ;
+                color: #3FA037;
+                text-align: center;
+                line-height: 8rem;
+                transform: rotate(-120deg);
+              }
+              &:after{
+                  content: "Regular" ;
+                  position: absolute;
+                  font-size: 25px;
+                  top: 0;
+                  left: 0;
+                  background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                  transform: scale(1.1) rotate(-120deg) ;
+                  text-align: center;
+                  color: black;
+                  line-height: 14rem;
+              }
+
+            }
+
+
+
+              .skill-gulp-sass{
+                  &,
+                  &:before,
+                  &:after{
+                    width: 12rem;
+                    height: 12rem;
+                    border-radius: 50%;
+
+                  }
+                  margin: auto;
+                  background: linear-gradient(0deg, rgb(94, 195, 31) 30%, rgba(black, .2) 45%);
+                  position: relative;
+                  transform: rotate(120deg);
+
+                &:before{
+                  content: "Gulp-Sass" ;
+
+
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background: #323330 content-box;
+                  padding: .5em;
+                  box-sizing:border-box;
+                  font-size: 2rem ;
+                  color: #CC6698;
+                  text-align: center;
+                  line-height: 8rem;
+                  transform: rotate(-120deg);
+                }
+                &:after{
+                    content: "Bueno" ;
+                    position: absolute;
+                    font-size: 25px;
+                    top: 0;
+                    left: 0;
+                    background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                    transform: scale(1.1) rotate(-120deg) ;
+                    text-align: center;
+                    color: black;
+                    line-height: 14rem;
+                }
+
+              }
+
+
+
+
+                .skill-API-REST{
+                      &,
+                        &:before,
+                        &:after{
+                          width: 12rem;
+                          height: 12rem;
+                          border-radius: 50%;
+
+                        }
+                        margin: auto;
+                        background: linear-gradient(0deg,  rgb(94, 195, 31) 26%, rgba(black, .2) 37%);
+                        position: relative;
+                        transform: rotate(120deg);
+
+                      &:before{
+                        content: "API-REST" ;
+
+
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background: #323330 content-box;
+                        padding: .5em;
+                        box-sizing:border-box;
+                        font-size: 2rem ;
+                        color: #ffff;
+                        text-align: center;
+                        line-height: 8rem;
+                        transform: rotate(-120deg);
+                      }
+                      &:after{
+                          content: "Bueno" ;
+                          position: absolute;
+                          font-size: 25px;
+                          top: 0;
+                          left: 0;
+                          background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                          transform: scale(1.1) rotate(-120deg) ;
+                          text-align: center;
+                          color: black;
+                          line-height: 14rem;
+                      }
+
+                    }
+
+
+
+
+
+                      .skill-Express{
+                          &,
+                          &:before,
+                          &:after{
+                            width: 12rem;
+                            height: 12rem;
+                            border-radius: 50%;
+
+                          }
+                          margin: auto;
+                          background: linear-gradient(0deg,  rgb(94, 195, 31) 26%, rgba(black, .2) 37%);
+                          position: relative;
+                          transform: rotate(120deg);
+
+                        &:before{
+                          content: "Express" ;
+
+
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                          background: #323330 content-box;
+                          padding: .5em;
+                          box-sizing:border-box;
+                          font-size: 2rem ;
+                          color: #ffff;
+                          text-align: center;
+                          line-height: 8rem;
+                          transform: rotate(-120deg);
+                        }
+                        &:after{
+                            content: "Bueno" ;
+                            position: absolute;
+                            font-size: 25px;
+                            top: 0;
+                            left: 0;
+                            background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                            transform: scale(1.1) rotate(-120deg) ;
+                            text-align: center;
+                            color: black;
+                            line-height: 14rem;
+                        }
+
+                      }
+
+
+
+
+
+                        .skill-TypeScript{
+                            &,
+                            &:before,
+                            &:after{
+                              width: 12rem;
+                              height: 12rem;
+                              border-radius: 50%;
+
+                            }
+                            margin: auto;
+                            background: linear-gradient(0deg,  rgb(94, 195, 31) 23%, rgba(black, .2) 37%);
+                            position: relative;
+                            transform: rotate(120deg);
+
+                          &:before{
+                            content: "TypeScript" ;
+
+
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            background: #323330 content-box;
+                            padding: .5em;
+                            box-sizing:border-box;
+                            font-size: 2rem ;
+                            color: #3178C6;
+                            text-align: center;
+                            line-height: 8rem;
+                            transform: rotate(-120deg);
+                          }
+                          &:after{
+                              content: "Bueno" ;
+                              position: absolute;
+                              font-size: 25px;
+                              top: 0;
+                              left: 0;
+                              background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                              transform: scale(1.1) rotate(-120deg) ;
+                              text-align: center;
+                              color: black;
+                              line-height: 14rem;
+                          }
+
+                        }
+
+
+
+
+
+
+                          .skill-NodeJs{
+                              &,
+                              &:before,
+                              &:after{
+                                width: 12rem;
+                                height: 12rem;
+                                border-radius: 50%;
+
+                              }
+                              margin: auto;
+                              background: linear-gradient(0deg,  rgb(172, 174, 0) 5%, rgba(black, .2) 25%);
+                              position: relative;
+                              transform: rotate(120deg);
+
+                            &:before{
+                              content: "NODE" ;
+
+
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              background: #323330 content-box;
+                              padding: .5em;
+                              box-sizing:border-box;
+                              font-size: 2rem ;
+                              color: #4DB33D;
+                              text-align: center;
+                              line-height: 8rem;
+                              transform: rotate(-120deg);
+                            }
+                            &:after{
+                                content: "Regular" ;
+                                position: absolute;
+                                font-size: 25px;
+                                top: 0;
+                                left: 0;
+                                background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                                transform: scale(1.1) rotate(-120deg) ;
+                                text-align: center;
+                                color: black;
+                                line-height: 14rem;
+                            }
+
+                          }
+                          .skill-CSS-Grid{
+                              &,
+                              &:before,
+                              &:after{
+                                width: 12rem;
+                                height: 12rem;
+                                border-radius: 50%;
+
+                              }
+                              margin: auto;
+                              background: linear-gradient(0deg,  rgb(29, 195, 31) 50%, rgba(black, .2) 75%);
+                              position: relative;
+                              transform: rotate(120deg);
+
+                            &:before{
+                              content: "CSS-GRID" ;
+
+
+                              position: absolute;
+                              top: 0;
+                              left: 0;
+                              background: #323330 content-box;
+                              padding: .5em;
+                              box-sizing:border-box;
+                              font-size: 2rem ;
+                              color: #CC66D7;
+                              text-align: center;
+                              line-height: 8rem;
+                              transform: rotate(-120deg);
+                            }
+                            &:after{
+                                content: "Óptimo" ;
+                                position: absolute;
+                                font-size: 25px;
+                                top: 0;
+                                left: 0;
+                                background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                                transform: scale(1.1) rotate(-120deg) ;
+                                text-align: center;
+                                color: black;
+                                line-height: 14rem;
+                            }
+
+                          }
+
+
+
+
+
+
+                            .skill-Flexbox{
+                                &,
+                                &:before,
+                                &:after{
+                                  width: 12rem;
+                                  height: 12rem;
+                                  border-radius: 50%;
+
+                                }
+                                margin: auto;
+                                background: linear-gradient(0deg,  rgb(29, 195, 31) 50%, rgba(black, .2) 75%);
+                                position: relative;
+                                transform: rotate(120deg);
+
+                              &:before{
+                                content: "FLEXBOX" ;
+
+
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background: #323330 content-box;
+                                padding: .5em;
+                                box-sizing:border-box;
+                                font-size: 2rem ;
+                                color: #01D8CD;
+                                text-align: center;
+                                line-height: 8rem;
+                                transform: rotate(-120deg);
+                              }
+                              &:after{
+                                  content: "Óptimo" ;
+                                  position: absolute;
+                                  font-size: 25px;
+                                  top: 0;
+                                  left: 0;
+                                  background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                                  transform: scale(1.1) rotate(-120deg) ;
+                                  text-align: center;
+                                  color: black;
+                                  line-height: 14rem;
+                              }
+
+                            }
+
+                            .skill-jQuery{
+                                &,
+                                &:before,
+                                &:after{
+                                  width: 12rem;
+                                  height: 12rem;
+                                  border-radius: 50%;
+
+                                }
+                                margin: auto;
+                                background: linear-gradient(0deg,  rgb(29, 195, 31) 50%, rgba(black, .2) 65%);
+                                position: relative;
+                                transform: rotate(120deg);
+
+                              &:before{
+                                content: "jQuery" ;
+
+
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                background: #323330 content-box;
+                                padding: .5em;
+                                box-sizing:border-box;
+                                font-size: 2rem ;
+                                color: #3FAC8F;
+                                text-align: center;
+                                line-height: 8rem;
+                                transform: rotate(-120deg);
+                              }
+                              &:after{
+                                  content: "Óptimo" ;
+                                  position: absolute;
+                                  font-size: 25px;
+                                  top: 0;
+                                  left: 0;
+                                  background: linear-gradient(transparent 50%, #f6f6f6 50%);
+                                  transform: scale(1.1) rotate(-120deg) ;
+                                  text-align: center;
+                                  color: black;
+                                  line-height: 14rem;
+                              }
+
+                            }
