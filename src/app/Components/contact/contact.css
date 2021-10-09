@@ -15,14 +15,17 @@ body {
 .contenedor-datos-personales {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-right: 1px solid black;
+  align-items: flex-start;
   order: -1;
 }
 
 .contenedor-datos-personales img {
   max-width: 250px;
   border-radius: 69px;
+}
+
+.contenedor-datos-personales h3 {
+  font-size: 1.45rem;
 }
 
 .contenedor-datos-personales .contenedor-personal {
@@ -70,72 +73,17 @@ body {
 
 .contenedor-cursos .cursos .curso {
   cursor: pointer;
+}
+
+.contenedor-cursos .cursos .masterJs, .contenedor-cursos .cursos .flexbox, .contenedor-cursos .cursos .basicoCssHtml {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  height: 24vh;
-  margin: 15px 0px;
-  max-width: 410px;
+  align-items: center;
 }
 
-.contenedor-cursos .cursos label {
-  display: block;
-  margin: 0px 67px;
-  max-width: 410px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
-}
-
-.contenedor-cursos .masterJs {
-  background-image: url("/assets/cursoVictor.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.contenedor-cursos .flexbox {
-  background-image: url("/assets/cursoFlex.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-.contenedor-cursos .basicoCssHtml {
-  background-image: url("/assets/basicohtmlcss.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .contenedor-personal-estudios {
-    margin-top: 50px;
-    display: flex;
-  }
-  .contenedor-datos-personales {
-    flex: 0 0 20%;
-    padding: 0px 40px;
-    margin: 0px 40px;
-  }
-  .contenedor-cursos {
-    display: flex;
-    flex-direction: column;
-  }
-  .contenedor-cursos .cursos {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .contenedor-cursos .curso {
-    display: flex;
-    align-items: flex-end;
-    min-width: 400px;
-    max-width: 410px;
-    min-height: 150px;
-  }
-  h2 {
-    margin-bottom: 35px;
-  }
+.contenedor-cursos .cursos .masterJs img, .contenedor-cursos .cursos .flexbox img, .contenedor-cursos .cursos .basicoCssHtml img {
+  max-width: 350px;
+  min-width: 350px;
 }
 
 .contenedor-skills-personales {
@@ -156,15 +104,53 @@ body {
   padding: 3px;
 }
 
+.container {
+  display: none;
+}
+
+.botones-resumen {
+  display: flex;
+  margin: 66px 30px 30px 30px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor-personal-estudios {
+    margin-top: 50px;
+    display: flex;
+  }
+  .contenedor-personal h3 {
+    font-size: 1.45rem;
+  }
+  .contenedor-datos-personales {
+    flex: 0 0 20%;
+    padding: 0px 40px;
+    margin: 0px 40px;
+    border-right: 1px  solid black;
+  }
+  .contenedor-cursos {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-cursos .cursos {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contenedor-cursos .curso {
+    display: flex;
+    align-items: flex-end;
+  }
+  h2 {
+    margin-bottom: 35px;
+  }
+}
+
 @media screen and (min-width: 568px) {
   .contenedor-skills-personales .skills-personales {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-  }
-  .contenedor-skills-personales .skills-personales label {
-    text-align: left;
-    padding: 7px;
   }
 }

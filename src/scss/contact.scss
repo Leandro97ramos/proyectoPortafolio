@@ -14,12 +14,14 @@ body {
   .contenedor-datos-personales{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-right: 1px solid black;
+    align-items: flex-start;
     order: -1;
     img{
       max-width: 250px;
       border-radius: 69px;
+    }
+    h3{
+      font-size: 1.45rem;
     }
     .contenedor-personal{
       padding: 15px 0px;
@@ -59,48 +61,55 @@ body {
     flex-direction: column;
     .curso{
       cursor:pointer;
+
+    }
+
+    .masterJs , .flexbox, .basicoCssHtml{
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      height: 24vh;
-      margin: 15px 0px;
-      max-width: 410px;
-
-    }
-    label{
-      display: block;
-      margin: 0px 67px;
-      max-width: 410px;
-      background-color: rgba(0, 0, 0, 0.6);
-      color:white;
+      align-items: center;
+      img{
+        max-width: 350px;
+        min-width: 350px;
+      }
 
     }
   }
-  .masterJs{
 
-    background-image:  url("/assets/cursoVictor.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
 
-  }
-  .flexbox{
-    background-image:  url("/assets/cursoFlex.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-
-  }
-  .basicoCssHtml{
-
-    background-image:  url("/assets/basicohtmlcss.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
 }
 
+
+.contenedor-skills-personales{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  .skills-personales{
+
+    display: flex;
+    flex-direction: column;
+
+  }
+  label{
+    
+
+    color: #969992;
+    border: 1px solid #969992;
+    margin: 10px;
+    padding:  3px;
+    
+  }
+}
+.container{
+  display: none;
+}
+
+.botones-resumen{
+  display: flex;
+  margin: 66px 30px 30px 30px;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
 @media screen and(min-width:768px ){
   .contenedor-personal-estudios{
@@ -108,10 +117,16 @@ body {
     display: flex;
 
   }
+  .contenedor-personal{
+    h3{
+      font-size: 1.45rem;
+    }
+  }
   .contenedor-datos-personales{
     flex: 0 0 20%;
     padding: 0px 40px;
     margin: 0px 40px;
+    border-right: 1px  solid black;
   }
 
   .contenedor-cursos{
@@ -125,9 +140,7 @@ body {
 
       display: flex;
       align-items: flex-end;
-      min-width: 400px;
-      max-width: 410px;
-      min-height: 150px;
+   
 
     }
     }
@@ -136,43 +149,15 @@ body {
     }
 
 }
-
-.contenedor-skills-personales{
-  width: 100%;
-  display: flex;
-  justify-content:center;
-  .skills-personales{
-
-    display: flex;
-    flex-direction: column;
-
-  }
-  label{
-
-
-    color: #969992;
-    border: 1px solid #969992;
-    margin: 10px;
-    padding:  3px;
-
-  }
-}
-
 @media screen and (min-width:568px){
   .contenedor-skills-personales{
     .skills-personales{
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content:space-around;
-
-      label{
-        text-align: left;
-        padding: 7px;
-
-      }
+      justify-content:space-around;   
     }
-
+    
   }
-
+  
 }

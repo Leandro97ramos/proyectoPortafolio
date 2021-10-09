@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as jQuery from 'jquery';
 
 @Component({
   selector: 'app-contact',
@@ -12,4 +13,12 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  animarContenedor(){
+
+    $(".container").animate({
+      display:'block',
+      height: 'toggle'
+  });
+  }
+ 
 }

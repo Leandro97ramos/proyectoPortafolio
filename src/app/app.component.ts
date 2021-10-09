@@ -1,5 +1,4 @@
 import { Component, OnInit, DoCheck } from '@angular/core';
-import {CambioProject} from './camb/cambioProject';
 import * as jQuery from 'jquery';
 
 @Component({
@@ -13,17 +12,11 @@ export class AppComponent implements  OnInit,  DoCheck {
   public noProject: boolean;
 
   constructor(){
-    this.noProject = CambioProject.cambio;
   }
   ngDoCheck(){
-      this.noProject= CambioProject.cambio;
-      console.log("en AppComponent "+this.noProject);
 
   }
   ngOnInit() {
-
-
-
 
   }
 

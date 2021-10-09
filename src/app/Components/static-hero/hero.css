@@ -73,16 +73,9 @@ header {
   list-style: none;
 }
 
-.navegacion ul li:hover {
-  padding: 0px 15px;
-  margin: 25px;
-  text-align: center;
-  transition: 1s ease all;
-}
-
 .navegacion ul li:hover a {
   color: #DB0000;
-  transition: 3s ease all;
+  transition: 1.6s ease all;
 }
 
 .navegacion ul li a {
@@ -113,10 +106,11 @@ header {
 
 .navegacion ul {
   padding-top: 10px;
+  padding-left: 0px;
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -125,6 +119,7 @@ header {
   }
   .navegacion ul {
     flex-direction: row;
+    justify-content: space-around;
     padding: 0px;
     margin: 0px;
   }

@@ -71,18 +71,14 @@ header{
   padding: 10px 12px 10px 12px;
   cursor: pointer;
   list-style: none;
-  &:hover{
+  &:hover a{
 
-    padding: 0px 15px;
-    margin: 25px;
-    text-align: center;
-    a{
+    
     color: #DB0000;
-    transition:  3s ease all;
+    transition:  1.6s ease all;
 
-    }
-    transition:  1s ease all;
   }
+  
 }
 .navegacion ul li a{
   color: white;
@@ -109,17 +105,20 @@ header{
 }
 .navegacion ul{
   padding-top: 10px;
+  padding-left: 0px;
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (min-width: 768px){
   .navegacion{
     flex:0 1 calc(43% - 1rem);
+ 
   }
   .navegacion ul{
     flex-direction: row;
+    justify-content: space-around;
     padding: 0px;
     margin: 0px;
   }

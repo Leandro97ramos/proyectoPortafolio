@@ -8,15 +8,25 @@
             <img src="../assets/yo.png" alt="">
         </div>
         <div class="contenedor-personal">
-            <h3><strong>Nombre:</strong> Leandro</h3>
-            <h3><strong>Apellido:</strong> Ramos</h3>
-            <h3><strong>Edad:</strong> 23</h3>
-            <h3><strong>Contacto:</strong>leandro.97.ramos@gmail.com</h3>
+            <h3><strong>Nombre:</strong></h3>
+             <h3>Leandro</h3>
+            <h3><strong>Apellido:</strong></h3>
+              <h3>  Ramos</h3>
+            <h3><strong>Edad:</strong></h3>
+              <h3> 23</h3>
+            <h3><strong>Contacto:</strong></h3>
+             <h3>leandro.97.ramos@gmail.com</h3>
 
         </div>
         <div class="descripcion-personal">
-          <h4>Breve descripcion  <hr></h4>
-          <p>Soy un estudiante de Olavarria en provincia de Buenos aires. Que, por propio interés empecé a estudiar desarrollo web, en 2021 ingrese a la carrera Tudai en unicen, me considero una persona Detallista, Sociable  y con Convicción de superar metas personales, me gustan los desafíos y doy lo mejor de mi, puedo trabajar solo , pero me desenvuelvo mejor en un equipo, soy abierto a opiniones y discusiones  </p>
+          <h4>Descripcion<hr></h4>
+          <p> 
+              Soy un estudiante de Olavarria , provincia de Buenos aires.
+              tengo 23 años y soy un estudiante.
+              tuve experiencias laborales sobre el desarrollo de un sistema web de compra y venta de juegos, asumi un rol de desarrolo fron-end,
+              desarrollando el diseño web , creando y consumiendo APIS, como tambien hacer las conexiones con la Base de datos,
+              lamentablemente, el proyecto por temas economicos, se descontinuo , lo cual no puedo comprobar mi experiencia en ese lugar.
+          </p>
         </div>
     </div>
 
@@ -36,21 +46,34 @@
                 </div>
 
             </div>
+            <div class="botones-resumen">
+                <a class="cv">Ver Cv</a>
+                <a class="ver-hbl" (click)="animarContenedor()" >ver habilidades</a>
+            </div>
+            
+            <div class="container">
+              <app-skills></app-skills>
+            </div>            
             <div class="contenedor-cursos">
                 <h2>Cursos</h2>
                 <hr>
                 <div class="cursos">
-
+                  
                     <div class="curso masterJs">
-                      <label>Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS</label>
+                    <label>Master en JavaScript: Aprender JS, jQuery, Angular, NodeJS</label>
+                      <img src="/assets/cursoVictor.jpg" class="cursoJs" alt="">
                     </div>
 
                     <div class="curso flexbox">
                       <label>CSS Grid y Flexbox, La Guía Definitiva, Crea + 10 Proyectos</label>
+                      <img src="/assets/cursoFlex.jpg" alt="">
+
                     </div>
 
                     <div class="curso basicoCssHtml">
                       <label>Aprende a crear páginas web con HTML y CSS</label>
+                      <img src="/assets/basicohtmlcss.jpg" alt="">
+
                     </div>
 
               </div>
