@@ -1,292 +1,45 @@
-/*@import 'mixins' ;*/
-html {
-  background: #f6f6f6;
-}
-
-*,
-*:after,
-*:before {
-  box-sizing: inherit;
-  font-family: "Roboto", sans-serif;
-}
-
 body {
   font-family: "Lato", bold;
 }
 
-.contCuadr {
-  box-sizing: border-box;
-}
-
-.contenedor-proyectos .contenido-principal {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.contenedor-titulo {
+h1 {
   width: 100%;
-  padding: 50px;
-  display: flex;
-}
-
-.contenedor-titulo h1 {
-  width: 100%;
-  font-size: 2.9rem;
+  font-size: 3rem;
   padding-left: 30px;
   padding-bottom: 16px;
 }
 
-.contenedor-titulo a {
-  margin-top: 60px;
-  font-weight: bolder;
-  color: #1a73e8;
-  letter-spacing: 0.3rem;
-  cursor: POINTER;
-  text-decoration: none;
-  padding: 15px 10px;
-}
-
-.contenedor-titulo a:hover {
-  background: rgba(26, 115, 236, 0.1);
-  color: #334663;
-}
-
-.container {
-  padding: 60px 30px;
-}
-
-.contenedor-titulo {
-  width: 100%;
-  background: #e0e0e0;
+.contenedor-superior {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  box-shadow: -1px 22px 70px -28px rgba(0, 0, 0, 0.24);
+  padding: 25px 25px;
 }
 
-.contenedor-titulo .contenedor-proyectos {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.contenedor-titulo .contenedor-proyectos .proyecto {
-  margin: 25px;
-}
-
-.contenedor-titulo .contenedor-proyectos .proyecto img {
-  width: 500px;
-  height: 250px;
-}
-
-.contenedor-titulo .contenedor-proyectos .proyecto a {
-  text-decoration: none;
-  padding: 0px;
+.contenedor-superior img {
+  width: 250px;
 }
 
 .yo {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   box-shadow: -2px -13px 15px -7px rgba(0, 0, 0, 0.3);
   background: #e0e0e0;
-  border: none;
+  display: flex;
+  flex-direction: column;
   font-size: 25px;
   margin-top: 20px;
 }
 
-.yo a span {
-  letter-spacing: 12px;
-  position: absolute;
-  width: 100%;
-  cursor: pointer;
-  text-align: center;
-}
-
 .yo .desc {
-  padding: 32px 35px 0px 35px;
+  padding: 32px 18px 0px 18px;
 }
 
 .yo .desc h3 {
   font-size: 2.5rem;
 }
 
-.yo .desc p {
-  text-align: justify;
-}
-
-.contenedor-skills {
-  padding-top: 5.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contenedor-skill {
-  width: 100%;
-}
-
-.titulo-skills h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 6rem 0;
-}
-
-/* progreso skills */
-.skill-js::marker {
-  color: #F0DB4F;
-}
-
-.skill-html::marker {
-  color: #f06529;
-}
-
-.skill-css3::marker {
-  color: #264de4;
-}
-
-.skill-angular::marker {
-  color: #dd1b16;
-}
-
-.skill-mongo::marker {
-  color: #3FA037;
-}
-
-.skill-gulp-sass::marker {
-  color: #CC6698;
-}
-
-.skill-API-REST::marker {
-  color: #ffff;
-}
-
-.skill-Express::marker {
-  color: #ffff;
-}
-
-.skill-TypeScript::marker {
-  color: #3178C6;
-}
-
-.skill-NodeJs::marker {
-  color: #4DB33D;
-}
-
-.skill-CSS-Grid::marker {
-  color: #CC66D7;
-}
-
-.skill-c::marker {
-  color: #9b4f96;
-}
-
-.skill-asp-net::marker {
-  color: #26c340;
-}
-
-.skill-sql::marker {
-  color: #3297dc;
-}
-
-.skill-Flexbox::marker {
-  color: #01D8CD;
-}
-
-.skill-jQuery::marker {
-  color: #3FAC8F;
-}
-
-.glosario {
-  display: flex;
-  flex-direction: row;
-}
-
-.glosario div {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-}
-
-.referencias {
-  margin-top: 25px;
-}
-
-.contenedor-skill .tabla-skills {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.contenedor-skill .tbl {
-  padding: 30px;
-}
-
-.contenedor-skill .tbl h2 {
-  font-size: 40px;
-}
-
-.contenedor-skill .tbl li {
-  font-size: 20px;
-}
-
-.contenedor-skill ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.contenedor-skill li {
-  list-style-type: square;
-}
-
-.contenedor-skill li b {
-  padding-left: 10px;
-}
-
-.quienSoy-hero a {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 20px 0px;
-  font-size: 15px;
-  margin-right: 0px;
-  text-decoration: none;
-}
-
-@media screen and (min-width: 768px) {
-  .contenedor-quienSoy {
-    display: flex;
-    justify-content: center;
-    margin-top: -165px;
-  }
-  .quienSoy-hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 480px;
-    min-height: 100px;
-  }
-  .quienSoy-hero img {
-    width: 25%;
-    border-radius: 100%;
-  }
-  .quienSoy-hero a {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    padding: 15px 35px;
-    font-size: 30px;
-    color: white;
-    border-radius: 5px;
-    background: #5090ff;
-    margin-right: 0px;
-    text-decoration: none;
-  }
+.yo .quienSoy {
+  background: #24211bfa;
+  text-align: center;
+  padding: 40px 0px;
 }
 
 footer {
@@ -300,34 +53,371 @@ footer {
   flex-direction: column;
 }
 
-footer .contacto {
-  padding-bottom: 15px;
+@media screen and (min-width: 768px) {
+  .contenedor-proyectos {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contenedor-proyectos img {
+    width: 250px;
+    height: 165px;
+  }
 }
 
-@media screen and (max-width: 778px) {
-  .tabla-skills {
+/*
+
+
+
+
+
+
+@import 'mixins' ;
+html {
+  background: #f6f6f6;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+}
+.contCuadr {
+  box-sizing: border-box;
+}
+.contenedor-proyectos .contenido-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.contenedor-titulo {
+  width: 100%;
+  padding: 50px;
+  display: flex;
+
+ 
+
+  
+  //flex-direction: column;
+  //justify-content: space-between;
+  //align-items: center;
+  a {
+    margin-top: 60px;
+    font-weight: bolder;
+    color: #1a73e8;
+    letter-spacing: 0.3rem;
+    cursor: POINTER;
+    text-decoration: none;
+    padding: 15px 10px;
+    &:hover {
+      background: rgba(26, 115, 236, 0.1);
+      color: #334663;
+    }
+  }
+}
+
+
+.container{
+  padding: 60px 30px;
+}
+
+
+.contenedor-titulo {
+  width: 100%;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-box-shadow: 0px 222px 35px 0px rgba(0, 0, 0, 0.17);
+  box-shadow: -1px 22px 70px -28px rgba(0, 0, 0, 0.24);
+
+  .contenedor-proyectos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .proyecto {
+      margin: 25px;
+      img {
+        width: 500px;
+        height: 250px;
+      }
+      a {
+        text-decoration: none;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+
+
+.contenedor-skills {
+  padding-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-skill {
+  width: 100%;
+}
+
+.titulo-skills h1 {
+  text-transform: uppercase;
+  margin: 0;
+  padding: 6rem 0;
+}
+
+/* progreso skills 
+
+.skill-js {
+  &::marker {
+    color: $colorJs;
+  }
+}
+
+.skill-html {
+  &::marker {
+    color: $colorHtml;
+  }
+}
+
+.skill-css3 {
+  &::marker {
+    color: $colorCss;
+  }
+}
+.skill-angular {
+  &::marker {
+    color:  $colorAngular;
+  }
+}
+
+.skill-mongo {
+  &::marker {
+  color: $colorMongo;
+  }
+}
+
+.skill-gulp-sass {
+  &::marker {
+    color:  $colorGulp;
+  }
+}
+
+.skill-API-REST {
+  &::marker {
+    color: $colorApi;
+  }
+}
+
+.skill-Express {
+  &::marker {
+    color: $colorExpres;
+  }
+}
+
+.skill-TypeScript {
+  &::marker {
+    color: $colorTs;
+  }
+}
+
+.skill-NodeJs {
+  &::marker {
+    color: $colorNode;
+  }
+}
+.skill-CSS-Grid {
+  &::marker {
+    color: $colorGrid;
+  }
+}
+
+.skill-c {
+  &::marker {
+    color: $colorC;
+  }
+}
+.skill-asp-net {
+  &::marker {
+    color: $colorAsp;
+  }
+}
+
+.skill-sql {
+  &::marker {
+    color: $colorSql;
+  }
+}
+
+.skill-Flexbox {
+  &::marker {
+    color: $colorFlex;
+  }
+}
+
+.skill-jQuery {
+  &::marker {
+    color: $colorJquery;
+  }
+}
+
+.glosario{
+  display: flex;
+  flex-direction: row;
+  div{
+    display: flex;
     flex-direction: column;
+    padding: 40px;
   }
-  .proyecto img {
-    width: auto;
-    max-width: 300px;
-    max-height: 300px;
-    min-height: 231px;
+}
+.referencias{
+  margin-top: 25px;
+}
+.contenedor-skill {
+ 
+  .tabla-skills{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
   }
-  .contenedor-titulo h1 {
-    padding: 0px;
+  .tbl  {
+    padding: 30px;
+    h2{
+      font-size: 40px;
+    }
+    li{
+      font-size: 20px;
+    }
   }
-  .glosario {
-    flex-direction: column;
-  }
-  .glosario div {
+
+
+
+  ul {
     display: flex;
     flex-direction: column;
   }
-  .yo .desc p {
-    text-align: inherit;
-  }
-  .quienSoy-hero a {
-    font-size: 30px;
+  li {
+    list-style-type: square;
+    b{
+      padding-left: 10px;
+    }
   }
 }
+
+
+.quienSoy-hero {
+
+
+  a {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    padding: 20px 0px;
+    font-size: 15px;
+    margin-right: 0px;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor-quienSoy {
+    display: flex;
+    justify-content: center;
+    margin-top: -165px;
+  }
+  .quienSoy-hero {
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    min-width: 480px;
+    min-height: 100px;
+    img {
+      width: 25%;
+      border-radius: 100%;
+    }
+
+    a {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      padding: 15px 35px;
+      font-size: 30px;
+      color: white;
+      border-radius: 5px;
+      background: #5090ff;
+      margin-right: 0px;
+      text-decoration: none;
+    }
+  }
+}
+footer {
+  width: 100%;
+  padding: 50px 0px;
+  height: auto;
+  background-color: rgba(25, 25, 25, 2.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .contacto {
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 778px) {
+  .tabla-skills{
+    flex-direction: column;
+
+
+  }
+  .proyecto{
+    img{
+      width: auto;
+      max-width: 300px;
+      max-height: 300px;
+      min-height: 231px;
+    }
+  }
+  .contenedor-titulo{
+    h1{
+      padding: 0px;
+    }
+  }
+  .glosario{
+    flex-direction: column;
+    div{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .yo{
+    .desc{
+      p{
+
+        text-align: inherit;
+      }
+    }
+  }
+  .quienSoy-hero{
+    a{
+
+      font-size: 30px;
+    }
+  }
+
+}
+
+
+
+*/
